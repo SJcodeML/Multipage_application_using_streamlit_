@@ -25,28 +25,20 @@ project_2_page = st.Page(
 # # # Navigation setup (without sectons)---
 pg= st.navigation(pages=[about_page , project_1_page  , project_2_page ])
 
+pg= st.navigation (
+    {
+        "Info": [about_page],
+        "projects" :[project_1_page , project_2_page]
+    }
+)
+
+# shared on all pages 
+st.logo("assets/codingisfun_logo.png")
+st.sidebar.text("Made by 💖 Sidra Jabin")
+
 # # # run navigation 
-# pg.run()/
+pg.run()
 
 
-
-
-# -------------------
-# import streamlit as st  
-# from views import about_me, sales_dashboard, chat_bot  
-
-# # Set the page config to include a title  
-# st.set_page_config(page_title="My Multipage App")  
-
-# # Create a sidebar for navigation  
-# pages = {  
-#     "About Me": about_me,  
-#     "Sales Dashboard": sales_dashboard,  
-#     "Chat Bot": chat_bot  
-# }  
-
-# selected_page = st.sidebar.selectbox("Select a Page", list(pages.keys()))  
-
-# # Run the selected page's app function  
-# pages[selected_page].app()  
+ 
 
