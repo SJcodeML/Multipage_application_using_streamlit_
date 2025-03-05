@@ -33,7 +33,8 @@ pg= st.navigation (
 )
 
 # shared on all pages 
-st.logo("assets/codingisfun_logo.png")
+# st.logo("assets/codingisfun_logo.png")
+# st.image("assets/codingisfun_logo.png", width=200)  # Adjust width as needed  
 st.sidebar.text("Made by 💖 Sidra Jabin")
 
 # # # run navigation 
